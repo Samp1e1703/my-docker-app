@@ -1,0 +1,9 @@
+FROM node:alpine
+
+WORKDIR /app
+
+COPY aggregator.js ./
+
+EXPOSE 4000
+
+CMD ["node", "aggregator.js"]
